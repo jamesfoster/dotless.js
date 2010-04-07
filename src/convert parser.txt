@@ -1,0 +1,50 @@
+^(\s*)(\w*):\s*\{
+	\1public static class \2 {
+
+^(\s*)(\w*):\s*function\s*\()
+	\1public static Node \2(Parser parser)
+	
+new\(tree.([^\)]*)\)
+    new \1
+	
+\$\(\/
+	parser.Match(@"
+	
+peek\(\/
+	parser.Peek(@"
+
+\/g\)
+	")
+
+\/gi\)
+	", true)
+
+$\('(.)'\)
+	parser.Match('\1')
+	
+peek('(.)'\)
+	parser.Peek('\1')
+	
+input[i]
+	parser.CurrentChar
+
+input[i\s*-\s*1]
+	parser.PreviousChar
+
+!==
+	!=
+	
+===
+	==
+	
+= []
+	= new ListNode()
+
+var (\w*);
+	Node \1;
+	
+throw new Error
+	throw new ParsingException
+
+
+	
